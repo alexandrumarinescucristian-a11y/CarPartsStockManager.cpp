@@ -86,6 +86,12 @@ int main() {
 
     string piesaCautata;
 
+    cout << "---Piese Disponibile in stok---" << endl;
+    cout << "Ulei Motor: 5w30, 5w40, 10w40, 0w20." << endl;
+    cout << "Placute Frana." << endl << "Filtru aer." << endl << "Filtru Aer." << endl << "Baterie Auto." << endl << "Filtru Polen." << endl << "Disc Frana." << endl << "Volanta + kit ambreiaj." << endl << endl;
+
+
+
     cout << "Introduceti numele piesei pe care o cautati: ";
 
     getline(cin, piesaCautata);
@@ -108,7 +114,7 @@ int main() {
 
 
 
-       
+
 
             if (toLower(stoc[i].denumire) == "ulei motor") {
 
@@ -130,7 +136,7 @@ int main() {
 
                 cin >> optiuneUleiStr;
 
-                optiuneUleiStr = toLower(optiuneUleiStr); 
+                optiuneUleiStr = toLower(optiuneUleiStr);
 
 
 
@@ -138,11 +144,11 @@ int main() {
 
 
 
-               
+
 
                 for (size_t j = 0; j < tipuriUlei.size(); j++) {
 
-                    string indexStr = to_string(j + 1); 
+                    string indexStr = to_string(j + 1);
 
 
 
